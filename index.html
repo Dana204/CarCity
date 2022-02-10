@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto+Slab:wght@100;300;400;500;600&display=swap" rel="stylesheet"> 
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+   <!-- TITLE -->
+    <title>CarCity</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="#">
+            <img src="./img/logo.png" alt="">
+            <span>CarCity</span>
+        </a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#" class="active">Inventory</a>
+            <a href="#">Rental Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div>
+            <a href="#">
+                <img src="./img/facebook.png" alt="">
+            </a>
+            <a href="#">
+                <img src="./img/twitter.png" alt="">
+            </a>
+            <img src="./img/search2.png" alt="" class="search-icon">
+            <img src="./img/menu.png" alt="" class="toggle">
+        </div>
+    </header>
+    <!-- ./HEADER -->
+
+
+    <!-- SEARCH -->
+    <div class="search">
+        <form action="">
+            <input type="text" placeholder="Keyword">
+            <select name="" id="">
+                <option value="">Vehicle Type</option>
+            </select>
+            <select name="" id="">
+                <option value="">Make</option>
+            </select>
+            <select name="" id="">
+                <option value="">Model</option>
+            </select>
+            <button type="submit" class="btn-fill">
+                <a href="#">Search</a>
+            </button>
+        </form>
+    </div>
+    <!-- ./SEARCH -->
+
+    <!-- MAIN -->
+    <main>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <span>Car Filter</span>
+
+            <!-- Sidebar Filters -->
+            <!-- Colour -->
+            <div class="sidebar__filter">
+                <input type="checkbox" name="" id="colour">
+                <label for="colour">
+                    <span>Colour</span>
+                    <img src="./img/down.png" alt="">
+                </label>
+                <div class="sidebar__filter-content">
+                    <!-- Colour 1 -->
+                    <div>
+                        <label for="colour1">
+                            <span class="label">Silver</span>
+                            <input type="checkbox" checked="checked" name="colour" id="colour1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>28</span>
+                    </div>
+                    <!-- Colour 2 -->
+                    <div>
+                        <label for="colour2">
+                            <span class="label">White</span>
+                            <input type="checkbox" checked="checked" name="colour" id="colour2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Colour 3 -->
+                    <div>
+                        <label for="colour3">
+                            <span class="label">Black</span>
+                            <input type="checkbox" checked="checked" name="colour" id="colour3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Colour 4 -->
+                    <div>
+                        <label for="colour4">
+                            <span class="label">Gray</span>
+                            <input type="checkbox" checked="checked" name="colour" id="colour4">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Colour 5 -->
+                    <div>
+                        <label for="colour5">
+                            <span class="label">Blue</span>
+                            <input type="checkbox" checked="checked" name="colour" id="colour5">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Colour 6 -->
+                    <div>
+                        <label for="colour6">
+                            <span class="label">Brown</span>
+                            <input type="checkbox" checked="checked" name="colour" id="colour6">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Year -->
+            <div class="sidebar__filter">
+                <input type="checkbox" name="" id="trans">
+                <label for="trans">
+                    <span>Transmission</span>
+                    <img src="./img/down.png" alt="">
+                </label>
+                <div class="sidebar__filter-content">
+                    <!-- Transmission 1 -->
+                    <div>
+                        <label for="trans1">
+                            <span class="label">Automatic</span>
+                            <input type="checkbox" checked="checked" name="trans" id="trans1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Transmission 2 -->
+                    <div>
+                        <label for="trans2">
+                            <span class="label">Manual</span>
+                            <input type="checkbox" checked="checked" name="trans" id="trans2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Condition -->
+            <div class="sidebar__filter">
+                <input type="checkbox" name="" id="cond">
+                <label for="cond">
+                    <span>Condition</span>
+                    <img src="./img/down.png" alt="">
+                </label>
+                <div class="sidebar__filter-content">
+                    <!-- Condition 1 -->
+                    <div>
+                        <label for="cond1">
+                            <span class="label">New</span>
+                            <input type="checkbox" checked="checked" name="cond" id="cond1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>300</span>
+                    </div>
+                    <!-- Condition 2 -->
+                    <div>
+                        <label for="cond2">
+                            <span class="label">Pre-Owned</span>
+                            <input type="checkbox" checked="checked" name="cond" id="cond2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>200</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Passengers -->
+            <div class="sidebar__filter">
+                <input type="checkbox" name="" id="pass">
+                <label for="pass">
+                    <span>Passengers</span>
+                    <img src="./img/down.png" alt="">
+                </label>
+                <div class="sidebar__filter-content">
+                    <!-- Passenger Type 1 -->
+                    <div>
+                        <label for="pass1">
+                            <span class="label">1 to 2 Passengers</span>
+                            <input type="checkbox" checked="checked" name="pass" id="pass1">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Passenger Type 2 -->
+                    <div>
+                        <label for="pass2">
+                            <span class="label">3 to 5 Passengers</span>
+                            <input type="checkbox" checked="checked" name="pass" id="pass2">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                    <!-- Passenger Type 3 -->
+                    <div>
+                        <label for="pass3">
+                            <span class="label">6+ Passengers</span>
+                            <input type="checkbox" checked="checked" name="pass" id="pass3">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car List -->
+        <div class="car-list" >
+            <!-- Car List Header -->
+            <div class="car-list__header">
+                <p>
+                    412 Cars found
+                    <span>Prices inclusive of taxes</span>
+                </p>
+                <div>
+                    <img src="./img/grid.png" alt="">
+                    <img src="./img/row.png" alt="">
+                </div>
+            </div>
+
+            <!-- Car List -->
+            <div class="car-list__cars" style="display: nne;">
+                <!-- Car 1 -->
+                <div class="car-list__car">
+                    <div class="car-list__car-top">
+                        <a href="#"><img src="./img/sharing.png" alt=""></a>
+                        <div class="car-list__car-tag">Popular</div>
+                        <img src="./img/car2.png" alt="">
+                    </div>
+                    <div class="car-list__car-body">
+                        <span>Acura Car Sedan Side</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, iste?</p>
+                    </div>
+                    <div class="car-list__car-footer">
+                        <button class="btn-fill">
+                            <a href="#">View</a>
+                        </button>
+                        <p>1.5M</p>
+                    </div>
+                </div>
+                <!-- Car 2 -->
+                <div class="car-list__car">
+                    <div class="car-list__car-top">
+                        <a href="#"><img src="./img/sharing.png" alt=""></a>
+                        <img src="./img/car2.png" alt="">
+                    </div>
+                    <div class="car-list__car-body">
+                        <span>Acura Car Sedan Side</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, iste?</p>
+                        
+                    </div>
+                    <div class="car-list__car-footer">
+                        <button class="btn-fill">
+                            <a href="#">View</a>
+                        </button>
+                        <p>1.5M</p>
+                    </div>
+                </div>
+                <!-- Car 3 -->
+                <div class="car-list__car">
+                    <div class="car-list__car-top">
+                        <a href="#"><img src="./img/sharing.png" alt=""></a>
+                        <div class="car-list__car-tag">New</div>
+                        <img src="./img/car2.png" alt="">
+                    </div>
+                    <div class="car-list__car-body">
+                        <span>Acura Car Sedan Side</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, iste?</p>
+                    </div>
+                    <div class="car-list__car-footer">
+                        <button class="btn-fill">
+                            <a href="#">View</a>
+                        </button>
+                        <p>1.5M</p>
+                    </div>
+                </div>
+                <!-- Car 4 -->
+                <div class="car-list__car">
+                    <div class="car-list__car-top">
+                        <a href="#"><img src="./img/sharing.png" alt=""></a>
+                        <img src="./img/car2.png" alt="">
+                    </div>
+                    <div class="car-list__car-body">
+                        <span>Acura Car Sedan Side</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, iste?</p>
+                    </div>
+                    <div class="car-list__car-footer">
+                        <button class="btn-fill">
+                            <a href="#">View</a>
+                        </button>
+                        <p>1.5M</p>
+                    </div>
+                </div>
+                <!-- Car 5 -->
+                <div class="car-list__car">
+                    <div class="car-list__car-top">
+                        <a href="#"><img src="./img/sharing.png" alt=""></a>
+                        <div class="car-list__car-tag">New</div>
+                        <img src="./img/car2.png" alt="">
+                    </div>
+                    <div class="car-list__car-body">
+                        <span>Acura Car Sedan Side</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, iste?</p>           
+                    </div>
+                    <div class="car-list__car-footer">
+                        <button class="btn-fill">
+                            <a href="#">View</a>
+                        </button>
+                        <p>1.5M</p>
+                    </div>
+                </div>
+                <!-- Car 6 -->
+                <div class="car-list__car">
+                    <div class="car-list__car-top">
+                        <a href="#"><img src="./img/sharing.png" alt=""></a>
+                        <img src="./img/car2.png" alt="">
+                    </div>
+                    <div class="car-list__car-body">
+                        <span>Acura Car Sedan Side</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, iste?</p>
+                    </div>
+                    <div class="car-list__car-footer">
+                        <button class="btn-fill">
+                            <a href="#">View</a>
+                        </button>
+                        <p>1.5M</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- ./MAIN -->
+    
+    <!-- JS -->
+   <script src="../js/script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
+
+
