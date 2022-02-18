@@ -2,7 +2,7 @@
  * @author Dana Campbell
  * @email danacam28@gmail.com
  * @create date 2022-02-10 08:56:21
- * @modify date 2022-02-10 19:13:02
+ * @modify date 2022-02-18 12:21:44
  * @desc [Car dealership inventory page]
  */
 
@@ -363,14 +363,26 @@ main {
 	margin-left: auto;
 }
 
-.car-list__header > div img {
-	height: 1.3rem;
+.car-list__header > div select {
+	outline: none;
+	border: 1px solid var(--gainsboro);
+	color: var(--slate-gray);
 	cursor: pointer;
+	min-width: 12rem;
+	height: 2.8rem;
+	font-size: 0.875rem;
+	background-color: var(--white);
+	border-radius: 5px;
+	padding-left: 0.8em;
+	background-image: url('../img/arrow2.png');
+	background-repeat: no-repeat;
+  	background-position: 96% 50%;
+	-moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
 }
 
-.car-list__header > div img:not(:last-child) {
-	margin-right: 0.3em;
-}
+
 
 /** Car List Cars **/
 .car-list__cars {
@@ -420,8 +432,6 @@ main {
 
 .car-list__car-body {
 	padding: 0.8em;
-	border-top: 1px solid var(--gainsboro); 
-	border-bottom: 1px solid var(--gainsboro); 
 }
 
 .car-list__car-body > span {
