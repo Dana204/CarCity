@@ -2,7 +2,7 @@
  * @author Dana Campbell
  * @email danacam28@gmail.com
  * @create date 2022-02-10 08:56:21
- * @modify date 2022-03-19 13:47:24
+ * @modify date 2022-03-19 13:58:50
  * @desc [Car dealership inventory page]
  */
 
@@ -69,6 +69,7 @@ li {
 
 .btn-fill a {
 	color: var(--white);
+	font-size: 0.9rem;
 }
 
 .btn-fill:hover {
