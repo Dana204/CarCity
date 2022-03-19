@@ -2,7 +2,7 @@
  * @author Dana Campbell
  * @email danacam28@gmail.com
  * @create date 2022-02-10 08:56:21
- * @modify date 2022-03-19 13:58:50
+ * @modify date 2022-03-19 14:02:01
  * @desc [Car dealership inventory page]
  */
 
@@ -69,7 +69,6 @@ li {
 
 .btn-fill a {
 	color: var(--white);
-	font-size: 0.9rem;
 }
 
 .btn-fill:hover {
@@ -209,6 +208,10 @@ header div > img {
 .search form input ::-moz-placeholder {
 	color: var(--black);
 	opacity: 1;
+}
+
+.search form .btn-fill {
+	font-size: 0.9rem;
 }
 
 /*
@@ -394,7 +397,6 @@ main {
 }
 
 
-
 /** Car List Cars **/
 .car-list__cars {
 	display: grid;
@@ -514,6 +516,10 @@ main {
 .car-list__car-body > div:last-of-type div span {
 	font-size: 0.8rem;
 	color: var(--slate-gray);
+}
+
+.car-list__car-body > div:last-of-type .btn-fill {
+	font-size: 0.875rem;
 }
 
 
